@@ -1,0 +1,18 @@
+# Data configuration
+data_path: "data/raw/customer_clv.csv"
+test_size: 0.2
+seed: 42
+
+# Model hyperparameters
+alpha: 0.001  # Inner loop learning rate
+beta: 0.001   # Outer loop learning rate
+
+# Training configuration
+training:
+  n_episodes: 100
+  n_tasks: 5
+  k_shots: 5
+  save_interval: 10
+  model_dir: "models/checkpoints"
+
+
